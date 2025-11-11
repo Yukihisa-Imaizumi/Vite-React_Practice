@@ -1,6 +1,7 @@
 // src/components/Header.jsx
 import { useState, useEffect } from 'react'
 import './Header.css'
+import logo from '../assets/aselab_logo_dark.png'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -35,6 +36,7 @@ function Header() {
           <span></span>
           <span></span>
         </button>
+          <img src={logo} alt="Logo" width = "100" />
       </header>
 
       <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
