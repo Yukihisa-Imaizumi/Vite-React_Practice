@@ -17,11 +17,7 @@ function App() {
       <div style={{ marginTop: '60px' }}>
       <MainLayout>
         <Home/>
-      </MainLayout>
-       <div>
-        <p>
-        </p>
-       </div> 
+      </MainLayout> 
       </div>  
     </>
   )
