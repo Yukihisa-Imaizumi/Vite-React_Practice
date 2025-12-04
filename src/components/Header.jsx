@@ -1,19 +1,15 @@
 import React from 'react';
-import './Header.css';
-import logo from '../assets/aselab_logo_dark.png'; // 画像パスをスクリーンショットに合わせました
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo-container">
-        <img src={logo} alt="ASE LAB Logo" className="logo" />
-        <h1>ASE LAB</h1>
-      </div>
-      <nav>
+      <div className="logo">ASTRO CAMP</div>
+      <nav className="nav">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#past">History</a></li>
+          <li><a href="#apply" style={{ color: 'var(--color-accent)' }}>Apply</a></li>
         </ul>
       </nav>
     </header>
