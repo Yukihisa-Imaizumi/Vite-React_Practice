@@ -121,7 +121,11 @@ body {
 .activities-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5rem 2rem;
+  padding: 8rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-title {
@@ -141,6 +145,8 @@ body {
   gap: 4rem;
   margin-bottom: 10rem;
   opacity: 0; /* 初期状態は非表示（GSAPで表示） */
+  width: 100%;
+  max-width: 1000px;
 }
 
 /* 偶数番目は左右反転（ジグザグ） */
@@ -206,6 +212,10 @@ body {
 .footer {
   text-align: center;
   padding: 4rem 2rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  
   background: rgba(0, 0, 0, 0.6);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
