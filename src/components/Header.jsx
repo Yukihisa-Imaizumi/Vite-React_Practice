@@ -1,60 +1,23 @@
-// src/components/Header.jsx
-import { useState, useEffect } from 'react'
-import './Header.css'
-import logo from '../assets/aselab_logo_dark.png'
+import React from 'react';
+import './Header.css';
+import logo from '../assets/aselab_logo_dark.png'; // 画像パスをスクリーンショットに合わせました
 
-function Header() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
-
-  const closeMenu = () => {
-    setIsOpen(false)
-  }
-
-  // メニュー外クリックで閉じる
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (isOpen && !event.target.closest('.nav-menu') && !event.target.closest('.hamburger')) {
-        closeMenu()
-      }
-    }
-
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [isOpen])
-
+const Header = () => {
   return (
-    <>
-      <header className="header">
-        <button className="hamburger" onClick={toggleMenu} aria-label="メニュー">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-          <img src={logo} alt="Logo" width = "100" />
-      </header>
-
-      <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
-        <button className="close-button" onClick={closeMenu} aria-label="閉じる">
-          ×
-        </button>
+    <header className="header">
+      <div className="logo-container">
+        <img src={logo} alt="ASE LAB Logo" className="logo" />
+        <h1>ASE LAB</h1>
+      </div>
+      <nav>
         <ul>
-          <li><a href="#home" onClick={closeMenu}>Home</a></li>
-          <li><a href="#about" onClick={closeMenu}>About</a></li>
-          <li><a href="#services" onClick={closeMenu}>Services</a></li>
-          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
       </nav>
+    </header>
+  );
+};
 
-      {/* オーバーレイ */}
-      {isOpen && <div className="overlay" onClick={closeMenu}></div>}
-    </>
-  )
-}
-
-export default Header
+export default Header;

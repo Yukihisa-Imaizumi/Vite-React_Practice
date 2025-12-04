@@ -1,16 +1,22 @@
-/* src/layouts/MainLayout.css */
-.main-layout {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* 背景のアニメーション定義 */
+@keyframes cosmic-drift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-.main-content {
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* 深い宇宙のようなグラデーション */
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #000000);
+  background-size: 400% 400%;
+  animation: cosmic-drift 15s ease infinite; /* 15秒かけてゆっくり動く */
+  color: #ffffff;
+}
+
+.content {
   flex: 1;
-  margin-top: 60px; /* ヘッダーの高さ分 */
-  padding: 2rem;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  padding: 40px 20px;
 }

@@ -1,0 +1,44 @@
+.space-card {
+  background: rgba(255, 255, 255, 0.05); /* 半透明のガラス風 */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 300px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* バネのような心地よい動き */
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+}
+
+.space-card:hover {
+  transform: translateY(-10px) scale(1.02); /* 上に浮き上がり少し拡大 */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 
+              0 0 15px rgba(100, 200, 255, 0.3); /* 光る影 */
+  border-color: rgba(100, 200, 255, 0.5);
+}
+
+.card-image-wrapper {
+  height: 180px;
+  overflow: hidden;
+}
+
+.space-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* ホバー時に中の画像だけさらにズームする */
+.space-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  color: #61dafb; /* Reactカラーの青 */
+}

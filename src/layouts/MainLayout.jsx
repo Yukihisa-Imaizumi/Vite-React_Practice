@@ -1,18 +1,18 @@
-// src/layouts/MainLayout.jsx
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import './MainLayout.css'
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import './MainLayout.css';
 
-function MainLayout({ children }) {
+const MainLayout = ({ children }) => {
   return (
     <div className="main-layout">
       <Header />
-      <main className="main-content">
+      <main className="content">
         {children}
       </main>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;
