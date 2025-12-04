@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './App.css';
-
+// import Footer from './components/Footer.css'
 // GSAPプラグインの登録
 gsap.registerPlugin(ScrollTrigger);
 
@@ -137,13 +137,14 @@ function App() {
       </section>
 
       {/* フッター */}
-      <footer className="footer">
+      {/* <footer className="footer">
         <div className="footer-content">
           <div className="logo" style={{ marginBottom: '1rem' }}>ASTRO CAMP</div>
           <p>Contact: info@astro-camp-dummy.jp</p>
           <p>&copy; 2025 Astro Camp Committee. All Rights Reserved.</p>
         </div>
-      </footer>
+      </footer> */}
+      {/* <Footer /> */}
     </div>
   );
 }
