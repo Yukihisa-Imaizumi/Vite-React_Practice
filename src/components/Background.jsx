@@ -7,7 +7,7 @@ const Background = () => {
     <div 
       className="background-container"
       // 2. インラインスタイルで背景画像を適用
-      style={{ backgroundImage: `url(${cosmicBg})` }}
+      style={{ backgroundImage: cosmicBg}}
     >
       <div className="background-overlay"></div>
     </div>

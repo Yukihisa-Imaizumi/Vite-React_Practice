@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <section id="home" className="hero" ref={containerRef}>
       <div className="hero-content">
-        <h1 className="hero-title">BEYOND THE ATMOSPHERE</h1>
+        <h1 className="hero-title">宇宙を本気で学ぶ、実践的プログラム</h1>
         <p className="hero-subtitle">
           宇宙への憧れを、確かな技術へ。<br />
           学生・社会人を対象とした、本気の宇宙開発強化合宿。
