@@ -69,7 +69,7 @@ body {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3.5px;
 }
 
 .nav ul {
@@ -87,6 +87,7 @@ body {
   font-family: var(--font-heading);
   font-size: 2rem;
   transition: color 0.3s;
+  letter-spacing: 0.1rem;
 }
 
 .nav a:hover {
@@ -128,7 +129,7 @@ body {
 
 /* --- 活動紹介セクション (ジグザグ) --- */
 .activities-container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 8rem 2rem;
 
@@ -139,12 +140,12 @@ body {
 
 .section-title {
   text-align: center;
-  font-family: var(--font-heading);
+  font-family: url('assets/fonts/BebasNeue-Regular.ttf'),sans-serif;
   font-size: 2.5rem;
   margin-bottom: 5rem;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 .activity-card {
@@ -180,6 +181,7 @@ body {
 }
 
 .activity-title {
+  white-space: pre-line;
   font-family: var(--font-heading);
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -221,7 +223,7 @@ body {
 .footer {
   bottom: 0;
   text-align: center;
-  width: 125%;
+  width: 100%;
   align-items: center;
   padding: 4rem 2rem;
   background: rgba(0, 0, 0, 0.6);

@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Activities from './components/Activities';
 import Footer from './components/Footer';
+import Carousel from './components/Carousel';
 // import Slider from './components/Slider'
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
       <Header />
       <Hero />
       <Activities />
+      <h2 className='section-title'>CONTENTS</h2>
+      <Carousel />
       <Footer />
-      {/* <Slider /> */}
 
     </div>
   );
