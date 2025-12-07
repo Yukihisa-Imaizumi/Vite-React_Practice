@@ -5,7 +5,7 @@
   --color-text: #e0e6ed;
   --color-accent: #00f3ff; /* ネオンシアン */
   --color-accent-sub: #bc13fe; /* ネオンパープル */
-  --font-heading: 'Orbitron', sans-serif;
+  --font-heading: url('assets/fonts/BebasNeue-Regular.ttf'), sans-serif;
   --font-body: 'Exo 2', sans-serif;
 }
 
@@ -18,7 +18,7 @@
 body {
   font-family: var(--font-body);
   color: var(--color-text);
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary);  <-- これを削除またはコメントアウト！ */
   overflow-x: hidden;
 }
 
@@ -32,6 +32,9 @@ body {
   z-index: -1;
   background-size: cover;
   background-position: center;
+  
+  /* 画像がロードされる前やエラー時に表示する色としてここに設定する */
+  background-color: var(--color-primary); 
 }
 
 /* 背景を少し暗くして文字を読みやすくするオーバーレイ */
@@ -54,14 +57,15 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  font-family: 'ASTRO-CAMP';
   background: rgba(11, 13, 23, 0.3);
   backdrop-filter: blur(10px); /* すりガラス効果 */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-family: url('assets/fonts/BebasNeue-Regular.ttf');
+  font-size: 4rem;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
@@ -75,10 +79,13 @@ body {
 }
 
 .nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
   color: #fff;
   text-decoration: none;
   font-family: var(--font-heading);
-  font-size: 0.9rem;
+  font-size: 2rem;
   transition: color 0.3s;
 }
 
@@ -110,6 +117,8 @@ body {
 }
 
 .hero-subtitle {
+  margin: 0 auto 3rem auto;
+  text-align: center;
   font-size: 1.2rem;
   max-width: 600px;
   margin-bottom: 3rem;
@@ -210,23 +219,27 @@ body {
 
 /* --- フッター --- */
 .footer {
+  bottom: 0;
   text-align: center;
+  width: 125%;
+  align-items: center;
   padding: 4rem 2rem;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  
   background: rgba(0, 0, 0, 0.6);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer h{
+  font-family: url('assets/fonts/BebasNeue-Regular.ttf'),sans-serif;
 }
 
 .footer p {
   margin-bottom: 1rem;
   color: #888;
+  
+  font-family: url('assets/fonts/BebasNeue-Regular.ttf'),sans-serif;
 }
 
 /* --- スマホ対応 --- */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .activity-card, .activity-card.reverse {
     flex-direction: column;
     gap: 2rem;
@@ -240,4 +253,18 @@ body {
     gap: 1rem;
     font-size: 0.8rem;
   }
+} */
+
+
+/* フォントの設定 */
+@font-face {
+  font-family:'ASTRO-CAMP';
+  src: url('assets/fonts/BebasNeue-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-custom{
+  font-family: 'ASTRO-CAMP', sans-serif;
 }

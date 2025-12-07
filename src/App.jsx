@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Activities from './components/Activities';
 import Footer from './components/Footer';
+// import Slider from './components/Slider'
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <Hero />
       <Activities />
       <Footer />
+      {/* <Slider /> */}
+
     </div>
   );
 }
