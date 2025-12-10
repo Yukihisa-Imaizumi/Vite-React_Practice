@@ -25,4 +25,8 @@ dist-ssr
 
 # .gitignore
 *.png
-*.jpeg
+*.jpg
+*.svg
+
+assets/*
+!assets/.gitkeep

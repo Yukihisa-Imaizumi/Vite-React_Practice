@@ -1,4 +1,5 @@
 import React from 'react';
+import ASELabIcon from '../assets/aselab_logo_dark.png'
 import HomeIcon from '@mui/icons-material/Home';
 import EventIcon from '@mui/icons-material/Event';
 import HistoryIcon from '@mui/icons-material/History';
@@ -7,7 +8,8 @@ import SendIcon from '@mui/icons-material/Send';
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo">ASTRO CAMP</div>
+      <div><img src = {ASELabIcon} alt = "ASE-Lab"/></div>
+      {/* <div className="logo">ASTRO CAMP</div> */}
       <nav className="nav">
         <ul>
           <li><a href="#home"><HomeIcon fontSize="large"  /> Home</a></li>

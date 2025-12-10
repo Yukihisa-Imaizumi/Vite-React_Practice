@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import ASTROCAMP2026 from '../assets/ASTRO_CAMP_2026_fix.png'
 
 const Hero = () => {
   const containerRef = useRef(null);
@@ -21,6 +22,7 @@ const Hero = () => {
   return (
     <section id="home" className="hero" ref={containerRef}>
       <div className="hero-content">
+        <div><img src={ASTROCAMP2026} alt="LOGO" /></div>
         <h1 className="hero-title">宇宙を本気で学ぶ、実践的プログラム</h1>
         <p className="hero-subtitle">
           宇宙への憧れを、確かな技術へ。<br />

@@ -1,5 +1,5 @@
 import React from 'react'
-import ContentsSlidar from './Slidar';
+import ContentsSlidar from './Slider';
 import { contentsData,} from '../data/contents'; 
 import { SliderRail } from '@mui/material';
 function Contents() {
