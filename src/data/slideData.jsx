@@ -7,7 +7,7 @@ export const slideData = [
   {
     id: 1,
     image: SatteliteDevImage, // 画像ファイル名を適宜変更
-    title: "衛星開発ゼミ",
+    title: "衛星開発ゼミ（宇宙機開発分野）",
     description: "衛星開発で使用される主要な技術スタックとその応用例を紹介。",
     link: "/article/space-dev"
   },
@@ -17,7 +17,7 @@ export const slideData = [
     title: "衛星データ解析ゼミ",
     description: "衛星データ解析で使用される主要な技術スタックとその応用例を紹介。",
     link: "/article/web-dev"
-  },
+      },
   {
     id: 3,
     image: JigyouAnalysisImage, // 画像ファイル名を適宜変更
